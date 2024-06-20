@@ -1,1 +1,2 @@
-.env
+.envgit diff
+__pycache__/
