@@ -1,0 +1,18 @@
+[33mcommit 3429ef911fc9b1e4bd9a148ec88e7320a659a620[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Jeremiah Dunphy <Jeremiahedunphy@gmail.com>
+Date:   Thu Jun 20 11:24:27 2024 -0400
+
+    added __pycache__ to .gitignore
+
+[33mcommit f4f9a285bb1f3904a2f2040b9b62e95e85dde694[m
+Author: Jeremiah Dunphy <Jeremiahedunphy@gmail.com>
+Date:   Thu Jun 20 11:19:45 2024 -0400
+
+    Added .env to gitignore
+    Added git ignore
+
+[33mcommit 939b8636e3adb628eabba91cb1e560bbb60daae0[m
+Author: Jeremiah Dunphy <Jeremiahedunphy@gmail.com>
+Date:   Thu Jun 20 11:09:31 2024 -0400
+
+    initial commit
