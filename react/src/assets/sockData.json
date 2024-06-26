@@ -1,0 +1,17 @@
+{
+    "userId": "user1",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Blue",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": false,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  }
