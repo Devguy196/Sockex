@@ -7,7 +7,8 @@ import Search from "./components/Search.jsx";
 import Home from "./components/Home";
 import Featured from "./components/Featured";
 import AddSock from "./components/AddSock";
-
+import RequireAuth from "./hooks/RequireAuth.jsx";
+import AuthContext from "./hooks/AuthContext.jsx"
 function App() {
   const [data, setData] = useState([]);
 
@@ -72,11 +73,18 @@ function App() {
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div className="container-fluid">
           <div className="row">
-            <Routes>
-              <Route exact path="/" element={<Home data={data} handleDelete={handleDelete} />} />
-              <Route path="/about" element={<div>About Page</div>} />
-              <Route path="/add-sock" element={<AddSock />} />
-            </Routes>
+          <AuthProvider>
+<Routes>
+    <Route exact path="/" element={<Home data={data} handleDelete={handleDelete} page={page} setPage={setPage} />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/add" element={
+    <RequireAuth>
+        <AddSock />
+    </RequireAuth>
+    } />
+    <Route path="/Login" element={<LoginForm />} />
+</Routes>
+</AuthProvider>
             <Featured />
             <div className='bg-yellow'>
               <Footer environment="DEVELOPMENT" />
